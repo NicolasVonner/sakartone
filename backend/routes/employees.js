@@ -8,6 +8,7 @@ router.get('/getOne/:id', employeesCtrl.getOneEmployees);
 router.post('/create', employeesCtrl.createEmployees);
 router.post('/delete/:id', employeesCtrl.deleteEmployees);
 router.patch('/update/:id', employeesCtrl.updateEmployees);
+router.get('/getEmployeesByDate', employeesCtrl.getEmployeesByDate);
 
 
 module.exports = router;

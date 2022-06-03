@@ -73,3 +73,11 @@ exports.deleteEmployees = (req, res, next) => {
     ).catch(error => res.status(400).json({error: error}));
 }
 
+exports.getEmployeesByDate = (req, res, next) => {
+  var todayDay = new Date();
+  weekday = new Array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'),
+	dayOfWeek = weekday[todayDay.getDay()],
+  console.log(dayOfWeek);
+  // Employees.find({days: dayOfWeek}).then(console.log(dayOfWeek));
+}
+
