@@ -14,6 +14,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Sakartone',
       theme: ThemeData(
+        inputDecorationTheme: InputDecorationTheme(
+          enabledBorder: OutlineInputBorder(
+            borderSide: const BorderSide(
+                width: 3, color: Colors.grey),
+            borderRadius: BorderRadius.circular(15),
+          ),focusedBorder: OutlineInputBorder(
+          borderSide: const BorderSide(
+              width: 3, color: Colors.black),
+          borderRadius: BorderRadius.circular(15),
+          )
+        ),
         primarySwatch: Colors.blue,
         tabBarTheme: const TabBarTheme(
             labelColor: Colors.white,
