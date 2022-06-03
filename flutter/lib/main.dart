@@ -30,11 +30,11 @@ class Sakartone extends StatelessWidget {
         theme: ThemeData(
           inputDecorationTheme: InputDecorationTheme(
               enabledBorder: OutlineInputBorder(
-                borderSide: const BorderSide(width: 3, color: Colors.grey),
+                borderSide: const BorderSide(width: 1, color: Colors.grey),
                 borderRadius: BorderRadius.circular(15),
               ),
               focusedBorder: OutlineInputBorder(
-                borderSide: const BorderSide(width: 3, color: Colors.black),
+                borderSide: const BorderSide(width: 1, color: Colors.black),
                 borderRadius: BorderRadius.circular(15),
               )),
           primarySwatch: Colors.blue,
@@ -115,3 +115,5 @@ class Sakartone extends StatelessWidget {
     );
   }
 }
+
+
