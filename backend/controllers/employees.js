@@ -3,6 +3,7 @@ const Employees = require('../models/employees');
 exports.getAllEmployees = (req, res, next) => {
     Employees.find().then(
       (employees) => {
+      console.log(employees);
         res.status(200).json(employees);
       }
     ).catch(

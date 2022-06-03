@@ -15,7 +15,7 @@ const normalizePort = val => {
 
 //Variables export.
 const port = normalizePort(process.env.PORT || '3000');
-const pathBdd = 'mongodb+srv://root:root@clustersakartone.mukm4mx.mongodb.net/?retryWrites=true&w=majority';
+const pathBdd = 'mongodb+srv://root:root@clustersakartone.mukm4mx.mongodb.net/sakartone?retryWrites=true&w=majority';
 
 
 

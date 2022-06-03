@@ -17,9 +17,8 @@ class Sakartone extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    Provider.of<EmployeesProvider>(context, listen: false).fetchData();
-    Sakartone.employees =
-        Provider.of<EmployeesProvider>(context, listen: false).employees;
+    /*Provider.of<EmployeesProvider>(context, listen: false).fetchData();
+    Sakartone.employees = Provider.of<EmployeesProvider>(context, listen: false).employees;*/
 
     return MultiProvider(
       providers: [

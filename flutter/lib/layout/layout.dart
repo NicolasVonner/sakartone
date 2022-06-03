@@ -18,3 +18,10 @@ export 'package:sakartone/layout/partials/drawer_menu.dart';
 export 'package:sakartone/layout/partials/drawer_menu_item.dart';
 export 'package:sakartone/layout/partials/employee_list_item.dart';
 
+
+//Provider
+export 'package:sakartone/providers/employees_provider.dart';
+
+
+//Model
+export 'package:sakartone/model/employees_model.dart';

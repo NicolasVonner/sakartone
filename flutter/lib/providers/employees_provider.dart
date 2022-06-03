@@ -17,10 +17,10 @@ class EmployeesProvider with ChangeNotifier {
       UnmodifiableListView(_employees);
 
   // Récupérer les données dans la base de données
-  void fetchData() async {
+  Future<void> fetchData() async {
     try {
       http.Response response = await http.get(
-        Uri.parse('$_host/api/users'),
+        Uri.parse('$_host/api/employees/'),
         headers: {
           'Content-type': 'application/json',
           "Access-Control-Allow-Origin":
@@ -33,10 +33,13 @@ class EmployeesProvider with ChangeNotifier {
         },
       );
       if (response.statusCode == 200) {
+        print("req");
+        print(json.decode(response.body));
         _employees = (json.decode(response.body) as List)
             .map((userJson) => Employees.fromJson(userJson))
             .toList();
-        notifyListeners();
+
+        //notifyListeners();
       }
     } catch (e) {
       rethrow;

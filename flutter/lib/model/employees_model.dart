@@ -4,8 +4,8 @@ class Employees {
   String name;
   DateTime hiringDate;
   int salary;
-  List<String> days;
-  String team;
+  List days;
+  int team;
 
   Employees(
       {this.id,
@@ -20,7 +20,7 @@ class Employees {
       : id = json['_id'],
         firstname = json['firstname'],
         name = json['name'],
-        hiringDate = json['hiringDate'],
+        hiringDate = DateTime.parse(json['hiringDate']),
         salary = json['salary'],
         days = json['days'],
         team = json['team'];
@@ -31,7 +31,7 @@ class Employees {
             '_id': id,
             'firstname': firstname,
             'name': name,
-            'hiringDate': hiringDate,
+            'hiringDate': hiringDate.toString(),
             'salary': salary,
             'days': days,
             'team': team
@@ -39,7 +39,7 @@ class Employees {
         : {
             'firstname': firstname,
             'name': name,
-            'hiringDate': hiringDate,
+            'hiringDate': hiringDate.toString(),
             'salary': salary,
             'days': days,
             'team': team
@@ -50,5 +50,9 @@ class Employees {
     return id != null
         ? "$id\n$firstname\n$name\n$hiringDate\n$salary\n$days\n$team\n\n"
         : "$firstname\n$name\n$hiringDate\n$salary\n$days\n$team\n\n";
+  }
+
+  String getFullName() {
+    return this.firstname + " " + this.name.toUpperCase();
   }
 }
