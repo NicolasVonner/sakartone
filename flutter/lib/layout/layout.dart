@@ -17,4 +17,5 @@ export 'package:sakartone/layout/partials/custom_app_bar.dart';
 export 'package:sakartone/layout/partials/drawer_menu.dart';
 export 'package:sakartone/layout/partials/drawer_menu_item.dart';
 export 'package:sakartone/layout/partials/top_bar.dart';
+export 'package:sakartone/layout/partials/stat_row_text.dart';
 

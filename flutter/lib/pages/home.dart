@@ -93,11 +93,24 @@ class Home extends StatelessWidget {
                       primary: Color(0xFFFFD88B),
                       elevation: 0,
                       shadowColor: Color(0xFFFFFFFF)),
-                  onPressed: () {},
+                  onPressed: () {_navigateAndDisplaySelection(context);},
                 )
               ],
             )),
           ],
         ));
   }
+
+
+   _navigateAndDisplaySelection(BuildContext context) async {
+    final choix = await Navigator.pushNamed(
+      context,
+      '/stats',
+     
+    );
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      content: Text("$choix"),
+      duration: Duration(seconds: 5),
+    ));
+   }
 }

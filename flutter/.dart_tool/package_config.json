@@ -86,7 +86,6 @@
       "languageVersion": "2.17"
     },
     {
-<<<<<<< HEAD
       "name": "google_fonts",
       "rootUri": "file:///Users/paul/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.3.3",
       "packageUri": "lib/",
@@ -95,20 +94,12 @@
     {
       "name": "http",
       "rootUri": "file:///Users/paul/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4",
-=======
-      "name": "http",
-      "rootUri": "file:///C:/Users/nicol/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/http-0.13.4",
->>>>>>> 373e4d84bd9808768f6304aff5a6a7caf3414600
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
     {
       "name": "http_parser",
-<<<<<<< HEAD
       "rootUri": "file:///Users/paul/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.1",
-=======
-      "rootUri": "file:///C:/Users/nicol/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/http_parser-4.0.1",
->>>>>>> 373e4d84bd9808768f6304aff5a6a7caf3414600
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -138,7 +129,7 @@
     },
     {
       "name": "nested",
-      "rootUri": "file:///C:/Users/nicol/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/nested-1.0.0",
+      "rootUri": "file:///Users/paul/flutter/.pub-cache/hosted/pub.dartlang.org/nested-1.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -203,17 +194,16 @@
       "languageVersion": "2.12"
     },
     {
-<<<<<<< HEAD
       "name": "process",
       "rootUri": "file:///Users/paul/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
-=======
+    },
+    {
       "name": "provider",
-      "rootUri": "file:///C:/Users/nicol/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/provider-6.0.3",
+      "rootUri": "file:///Users/paul/flutter/.pub-cache/hosted/pub.dartlang.org/provider-6.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
->>>>>>> 373e4d84bd9808768f6304aff5a6a7caf3414600
     },
     {
       "name": "sky_engine",
@@ -264,12 +254,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "typed_data",
-      "rootUri": "file:///C:/Users/nicol/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/typed_data-1.3.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "vector_math",
       "rootUri": "file:///Users/paul/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.2",
       "packageUri": "lib/",
@@ -294,11 +278,7 @@
       "languageVersion": "2.17"
     }
   ],
-<<<<<<< HEAD
-  "generated": "2022-06-03T12:01:29.370793Z",
-=======
-  "generated": "2022-06-03T10:17:09.497084Z",
->>>>>>> 373e4d84bd9808768f6304aff5a6a7caf3414600
+  "generated": "2022-06-03T12:51:30.037052Z",
   "generator": "pub",
   "generatorVersion": "2.17.1"
 }
