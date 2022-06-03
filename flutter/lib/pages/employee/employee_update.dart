@@ -43,7 +43,7 @@ class _EmployeeUpdateState extends State<EmployeeUpdate> {
     hiringDate: DateTime.now(),
     salary: 0,
     days: [],
-    team: "",
+    team: 1,
   );
 /*  Employees buildEmployees(Employees current) {
     //todo Vérifier si les champs de currents ne sont pas vide.
@@ -169,10 +169,7 @@ class _EmployeeUpdateState extends State<EmployeeUpdate> {
                             fillColor: Colors.white,
                             filled: true,
                           ),
-                          onSaved: (value) => newEmployees.team = value!,
-                          validator: (team) => team != null && team.isEmpty
-                              ? "Saisissez l'identifiant d'une équipe"
-                              : null,
+                          onSaved: (value) => newEmployees.team = int.parse(value!),
                         )),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 6),
