@@ -14,8 +14,7 @@ mongoose.connect(settings.pathBdd,
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
 
-const userRoutes = require('./routes/user');
-const tripRoutes = require('./routes/trip');
+const employeesRoutes = require('./routes/employees');
 
 // Middleware
 app.use(express.json()); // Pour extraire le corps JSON des requêtes POST
@@ -28,8 +27,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use('/api/users', userRoutes);
-app.use('/api/trips', tripRoutes);
+app.use('/api/employees', employeesRoutes);
 app.get('/', (req, res, next) => {
   res.statusCode=200;
   res.setHeader('Content-Type', 'text/plain');
