@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
         inputDecorationTheme: InputDecorationTheme(
           enabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(
-                width: 3, color: Colors.grey),
+                width: 1, color: Colors.grey),
             borderRadius: BorderRadius.circular(15),
           ),focusedBorder: OutlineInputBorder(
           borderSide: const BorderSide(
-              width: 3, color: Colors.black),
+              width: 1, color: Colors.black),
           borderRadius: BorderRadius.circular(15),
           )
         ),
