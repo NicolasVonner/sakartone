@@ -9,9 +9,24 @@ class Stat extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+
     return Scaffold(
-      appBar: CustomAppBar(),
-      body: Text('Statistiques'),
+      key: _scaffoldKey,
+
+      backgroundColor: Colors.white,
+      drawer: DrawerMenu(),
+      body: Container(
+          child: Column(
+            children: [
+              Top_Bar(scaffoldKey: _scaffoldKey),
+
+          ],
+        ),
+
+      ),
+      
     );
   }
 }
