@@ -19,6 +19,7 @@ class DrawerMenu extends StatelessWidget {
               DrawerMenuItem(itemTitle: 'Accueil', route: Home.routeName),
               DrawerMenuItem(itemTitle: 'Statistiques', route: Stat.routeName),
               DrawerMenuItem(itemTitle: 'Liste employés', route: EmployeeList.routeName),
+              DrawerMenuItem(itemTitle: 'Liste des équipes', route: TeamList.routeName),
             ],
           ),
         )
