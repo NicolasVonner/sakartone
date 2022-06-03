@@ -35,7 +35,6 @@ class Top_Bar extends StatelessWidget {
             height: 90,
             width: 300,
             decoration: BoxDecoration(
-              color: Color(0xFFFFFFFF),
               image: DecorationImage(
                 image: AssetImage('image/logo.png'),
                 fit: BoxFit.contain,
