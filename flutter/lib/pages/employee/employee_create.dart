@@ -14,6 +14,7 @@ class EmployeeCreate extends StatefulWidget {
   }
 }
   class _EmployeeCreateState extends State<EmployeeCreate> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
     DateTime selectedDate = DateTime.now();
     bool Lundi = false;
@@ -30,8 +31,8 @@ class EmployeeCreate extends StatefulWidget {
 @override
     Widget build(BuildContext context) {
       return Scaffold(
-          appBar: const CustomAppBar(),
           body:
+
           Padding(
               padding:
               const EdgeInsets.symmetric(horizontal: 75, vertical: 8),
@@ -40,6 +41,8 @@ class EmployeeCreate extends StatefulWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  Top_Bar(scaffoldKey: _scaffoldKey),
+
                   const Text('Créer un nouvel employé'),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
