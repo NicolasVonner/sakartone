@@ -1,4 +1,4 @@
-const Trip = require('../models/trip');
+// const Trip = require('../models/trip');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { json } = require('express');
