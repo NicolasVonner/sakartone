@@ -1,4 +1,4 @@
-class User {
+class Employees {
   String? id;
   String firstname;
   String name;
@@ -7,7 +7,7 @@ class User {
   List<String> days;
   String team;
 
-  User(
+  Employees(
       {this.id,
       required this.firstname,
       required this.name,
@@ -16,7 +16,7 @@ class User {
       required this.days,
       required this.team});
 
-  User.fromJson(Map<String, dynamic> json)
+  Employees.fromJson(Map<String, dynamic> json)
       : id = json['_id'],
         firstname = json['firstname'],
         name = json['name'],
