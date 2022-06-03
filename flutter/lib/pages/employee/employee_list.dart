@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 //import 'package:google_fonts/google_fonts.dart';
 import 'package:sakartone/layout/layout.dart';
 import 'package:provider/provider.dart';
+import 'package:sakartone/model/employees_model.dart';
+import 'package:sakartone/providers/employees_provider.dart';
 
 class EmployeeList extends StatefulWidget {
   static const String routeName = '/employee-list';
