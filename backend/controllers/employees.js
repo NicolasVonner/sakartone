@@ -25,7 +25,7 @@ exports.getOneEmployees = (req, res, next) => {
 exports.updateEmployees =  (req, res, next ) => {
     try {
       const id = new ObjectId(req.params.id);
-      const employees = await Employees.findOne({ _id: id });
+      const employees = Employees.findOne({ _id: id });
 
       if (req.body.firstname) {
         employees.firstname = req.body.firstname
@@ -45,7 +45,7 @@ exports.updateEmployees =  (req, res, next ) => {
       if (req.body.team) {
         employees.team = req.body.team
       } 
-      await employees.save();
+       employees.save();
       res.status(200).json(employees)
     } catch {
       res.status(404)
@@ -68,7 +68,8 @@ exports.createEmployees = (req, res, next) => {
 
 exports.deleteEmployees = (req, res, next) => {
     const id = new ObjectId(req.params.id);
-    await Employees.deleteOne({_id: id}).then( () => res.status(201).json({message: 'Employé supprimé'})
+    Employees.deleteOne({_id: id})
+    .then( () => res.status(201).json({message: 'Employé supprimé'})
     ).catch(error => res.status(400).json({error: error}));
 }
 
