@@ -13,7 +13,8 @@ class EmployeesProvider with ChangeNotifier {
   List<Employees> _employees = [];
   // Getter pour l'accès en lecture de l'ensemble des profiles
   // Pas de modificiation possible grâce au type UnmodifiableListView
-  UnmodifiableListView<Employees> get users => UnmodifiableListView(_employees);
+  UnmodifiableListView<Employees> get employees =>
+      UnmodifiableListView(_employees);
 
   // Récupérer les données dans la base de données
   void fetchData() async {
